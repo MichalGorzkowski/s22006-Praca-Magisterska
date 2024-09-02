@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0D1C1A2B4DEC5500E7910A /* LegoSetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D1C192B4DEC5500E7910A /* LegoSetDetailView.swift */; };
+		FB0D1C1C2B4DF45E00E7910A /* LegoSetSearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D1C1B2B4DF45E00E7910A /* LegoSetSearchRowView.swift */; };
+		FB2E6B352BEF84CC00E92D17 /* LegoSetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E6B342BEF84CC00E92D17 /* LegoSetDetailViewModel.swift */; };
+		FB2E6B372BF9F5E900E92D17 /* CollectionAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E6B362BF9F5E900E92D17 /* CollectionAnalytics.swift */; };
+		FB2E6B392BFA0C7700E92D17 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E6B382BFA0C7700E92D17 /* RangeType.swift */; };
+		FB42077B2B4D5A75009B8F14 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42077A2B4D5A75009B8F14 /* SearchView.swift */; };
+		FB42077D2B4D5BFA009B8F14 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42077C2B4D5BFA009B8F14 /* AccountView.swift */; };
+		FB42077F2B4D5CD9009B8F14 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42077E2B4D5CD9009B8F14 /* DiscoverView.swift */; };
+		FB4207832B4D77D1009B8F14 /* LegoSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4207822B4D77D1009B8F14 /* LegoSet.swift */; };
+		FB47DA822B47186A00B346A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DA812B47186A00B346A5 /* ContentView.swift */; };
+		FB47DA862B47186B00B346A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB47DA852B47186B00B346A5 /* Assets.xcassets */; };
+		FB47DA892B47186B00B346A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB47DA882B47186B00B346A5 /* Preview Assets.xcassets */; };
+		FB47DA932B47186B00B346A5 /* Board_Game_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DA922B47186B00B346A5 /* Board_Game_CenterTests.swift */; };
+		FB47DA9D2B47186B00B346A5 /* Board_Game_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DA9C2B47186B00B346A5 /* Board_Game_CenterUITests.swift */; };
+		FB47DA9F2B47186B00B346A5 /* Board_Game_CenterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DA9E2B47186B00B346A5 /* Board_Game_CenterUITestsLaunchTests.swift */; };
+		FB47DAAC2B471A6800B346A5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DAAB2B471A6800B346A5 /* LoginView.swift */; };
+		FB47DAAE2B471A9B00B346A5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DAAD2B471A9B00B346A5 /* RegistrationView.swift */; };
+		FB47DAB02B471E1600B346A5 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DAAF2B471E1600B346A5 /* MainScreenView.swift */; };
+		FB47DAB42B471E8900B346A5 /* SavedSetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DAB32B471E8900B346A5 /* SavedSetsView.swift */; };
+		FB47DABA2B471FF000B346A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB47DAB92B471FF000B346A5 /* GoogleService-Info.plist */; };
+		FB47DABD2B47207F00B346A5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DABC2B47207F00B346A5 /* FirebaseAnalytics */; };
+		FB47DABF2B47207F00B346A5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DABE2B47207F00B346A5 /* FirebaseAuth */; };
+		FB47DAC12B47207F00B346A5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DAC02B47207F00B346A5 /* FirebaseDatabase */; };
+		FB47DAC32B47207F00B346A5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DAC22B47207F00B346A5 /* FirebaseFirestore */; };
+		FB47DAC52B47207F00B346A5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DAC42B47207F00B346A5 /* FirebaseFirestoreSwift */; };
+		FB47DAC72B47207F00B346A5 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DAC62B47207F00B346A5 /* FirebaseFunctions */; };
+		FB47DAC92B47207F00B346A5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DAC82B47207F00B346A5 /* FirebaseMessaging */; };
+		FB47DACB2B47207F00B346A5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FB47DACA2B47207F00B346A5 /* FirebaseStorage */; };
+		FB47DACE2B47221E00B346A5 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DACD2B47221E00B346A5 /* FirebaseManager.swift */; };
+		FB79534A2B4D850600F6EE46 /* Bricks_Collection_CenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47DA7F2B47186A00B346A5 /* Bricks_Collection_CenterApp.swift */; };
+		FB79534C2B4D86D000F6EE46 /* LegoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79534B2B4D86D000F6EE46 /* LegoTheme.swift */; };
+		FB79534E2B4D879D00F6EE46 /* LegoMinifigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79534D2B4D879D00F6EE46 /* LegoMinifigure.swift */; };
+		FB7953512B4D888400F6EE46 /* RebrickableAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7953502B4D888400F6EE46 /* RebrickableAPIClient.swift */; };
+		FB9D906C2C6E13820001D24E /* RecomendationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D906B2C6E13820001D24E /* RecomendationConfig.swift */; };
+		FB9D906E2C6E17820001D24E /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D906D2C6E17820001D24E /* DiscoverViewModel.swift */; };
+		FBEB2A8A2C7CA5D100AE43D6 /* UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB2A892C7CA5D100AE43D6 /* UserInteraction.swift */; };
+		FBEB2A8C2C7CA5ED00AE43D6 /* UserInteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB2A8B2C7CA5ED00AE43D6 /* UserInteractionManager.swift */; };
+		FBEB2A8E2C7CA71F00AE43D6 /* MLRecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB2A8D2C7CA71F00AE43D6 /* MLRecommendationEngine.swift */; };
+		FBFEC5FD2B516AF00017C823 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEC5FC2B516AF00017C823 /* User.swift */; };
+		FBFEC5FF2B5175580017C823 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEC5FE2B5175580017C823 /* AccountViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB47DA8F2B47186B00B346A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB47DA742B47186A00B346A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB47DA7B2B47186A00B346A5;
+			remoteInfo = "Board Game Center";
+		};
+		FB47DA992B47186B00B346A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB47DA742B47186A00B346A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB47DA7B2B47186A00B346A5;
+			remoteInfo = "Board Game Center";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB0D1C192B4DEC5500E7910A /* LegoSetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoSetDetailView.swift; sourceTree = "<group>"; };
+		FB0D1C1B2B4DF45E00E7910A /* LegoSetSearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoSetSearchRowView.swift; sourceTree = "<group>"; };
+		FB2E6B342BEF84CC00E92D17 /* LegoSetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoSetDetailViewModel.swift; sourceTree = "<group>"; };
+		FB2E6B362BF9F5E900E92D17 /* CollectionAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAnalytics.swift; sourceTree = "<group>"; };
+		FB2E6B382BFA0C7700E92D17 /* RangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
+		FB42077A2B4D5A75009B8F14 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FB42077C2B4D5BFA009B8F14 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		FB42077E2B4D5CD9009B8F14 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		FB4207822B4D77D1009B8F14 /* LegoSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoSet.swift; sourceTree = "<group>"; };
+		FB47DA7C2B47186A00B346A5 /* Bricks Collection Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bricks Collection Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB47DA7F2B47186A00B346A5 /* Bricks_Collection_CenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bricks_Collection_CenterApp.swift; sourceTree = "<group>"; };
+		FB47DA812B47186A00B346A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB47DA852B47186B00B346A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB47DA882B47186B00B346A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB47DA8E2B47186B00B346A5 /* Bricks Collection CenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bricks Collection CenterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB47DA922B47186B00B346A5 /* Board_Game_CenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board_Game_CenterTests.swift; sourceTree = "<group>"; };
+		FB47DA982B47186B00B346A5 /* Bricks Collection CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bricks Collection CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB47DA9C2B47186B00B346A5 /* Board_Game_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board_Game_CenterUITests.swift; sourceTree = "<group>"; };
+		FB47DA9E2B47186B00B346A5 /* Board_Game_CenterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board_Game_CenterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB47DAAB2B471A6800B346A5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB47DAAD2B471A9B00B346A5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FB47DAAF2B471E1600B346A5 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		FB47DAB32B471E8900B346A5 /* SavedSetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSetsView.swift; sourceTree = "<group>"; };
+		FB47DAB92B471FF000B346A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB47DACD2B47221E00B346A5 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		FB79534B2B4D86D000F6EE46 /* LegoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoTheme.swift; sourceTree = "<group>"; };
+		FB79534D2B4D879D00F6EE46 /* LegoMinifigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoMinifigure.swift; sourceTree = "<group>"; };
+		FB7953502B4D888400F6EE46 /* RebrickableAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebrickableAPIClient.swift; sourceTree = "<group>"; };
+		FB9D906B2C6E13820001D24E /* RecomendationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationConfig.swift; sourceTree = "<group>"; };
+		FB9D906D2C6E17820001D24E /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		FBEB2A892C7CA5D100AE43D6 /* UserInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteraction.swift; sourceTree = "<group>"; };
+		FBEB2A8B2C7CA5ED00AE43D6 /* UserInteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractionManager.swift; sourceTree = "<group>"; };
+		FBEB2A8D2C7CA71F00AE43D6 /* MLRecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLRecommendationEngine.swift; sourceTree = "<group>"; };
+		FBFEC5FC2B516AF00017C823 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FBFEC5FE2B5175580017C823 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB47DA792B47186A00B346A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB47DAC52B47207F00B346A5 /* FirebaseFirestoreSwift in Frameworks */,
+				FB47DAC12B47207F00B346A5 /* FirebaseDatabase in Frameworks */,
+				FB47DAC92B47207F00B346A5 /* FirebaseMessaging in Frameworks */,
+				FB47DAC32B47207F00B346A5 /* FirebaseFirestore in Frameworks */,
+				FB47DAC72B47207F00B346A5 /* FirebaseFunctions in Frameworks */,
+				FB47DACB2B47207F00B346A5 /* FirebaseStorage in Frameworks */,
+				FB47DABD2B47207F00B346A5 /* FirebaseAnalytics in Frameworks */,
+				FB47DABF2B47207F00B346A5 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB47DA8B2B47186B00B346A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB47DA952B47186B00B346A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB0D1C182B4DEC1800E7910A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB47DA812B47186A00B346A5 /* ContentView.swift */,
+				FB47DAAB2B471A6800B346A5 /* LoginView.swift */,
+				FB47DAAD2B471A9B00B346A5 /* RegistrationView.swift */,
+				FB47DAAF2B471E1600B346A5 /* MainScreenView.swift */,
+				FB47DAB32B471E8900B346A5 /* SavedSetsView.swift */,
+				FB42077A2B4D5A75009B8F14 /* SearchView.swift */,
+				FB42077C2B4D5BFA009B8F14 /* AccountView.swift */,
+				FB42077E2B4D5CD9009B8F14 /* DiscoverView.swift */,
+				FB0D1C192B4DEC5500E7910A /* LegoSetDetailView.swift */,
+				FB0D1C1B2B4DF45E00E7910A /* LegoSetSearchRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB4207802B4D77BA009B8F14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB4207822B4D77D1009B8F14 /* LegoSet.swift */,
+				FB79534B2B4D86D000F6EE46 /* LegoTheme.swift */,
+				FB79534D2B4D879D00F6EE46 /* LegoMinifigure.swift */,
+				FBFEC5FC2B516AF00017C823 /* User.swift */,
+				FB2E6B382BFA0C7700E92D17 /* RangeType.swift */,
+				FB9D906B2C6E13820001D24E /* RecomendationConfig.swift */,
+				FBEB2A892C7CA5D100AE43D6 /* UserInteraction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB47DA732B47186A00B346A5 = {
+			isa = PBXGroup;
+			children = (
+				FB47DA7E2B47186A00B346A5 /* Bricks Collection Center */,
+				FB47DA912B47186B00B346A5 /* Board Game CenterTests */,
+				FB47DA9B2B47186B00B346A5 /* Board Game CenterUITests */,
+				FB47DA7D2B47186A00B346A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB47DA7D2B47186A00B346A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB47DA7C2B47186A00B346A5 /* Bricks Collection Center.app */,
+				FB47DA8E2B47186B00B346A5 /* Bricks Collection CenterTests.xctest */,
+				FB47DA982B47186B00B346A5 /* Bricks Collection CenterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB47DA7E2B47186A00B346A5 /* Bricks Collection Center */ = {
+			isa = PBXGroup;
+			children = (
+				FB4207802B4D77BA009B8F14 /* Model */,
+				FB0D1C182B4DEC1800E7910A /* View */,
+				FB47DACC2B4721C600B346A5 /* ViewModel */,
+				FB79534F2B4D885E00F6EE46 /* Services */,
+				FB47DAB92B471FF000B346A5 /* GoogleService-Info.plist */,
+				FB47DA7F2B47186A00B346A5 /* Bricks_Collection_CenterApp.swift */,
+				FB47DA852B47186B00B346A5 /* Assets.xcassets */,
+				FB47DA872B47186B00B346A5 /* Preview Content */,
+			);
+			path = "Bricks Collection Center";
+			sourceTree = "<group>";
+		};
+		FB47DA872B47186B00B346A5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB47DA882B47186B00B346A5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB47DA912B47186B00B346A5 /* Board Game CenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB47DA922B47186B00B346A5 /* Board_Game_CenterTests.swift */,
+			);
+			path = "Board Game CenterTests";
+			sourceTree = "<group>";
+		};
+		FB47DA9B2B47186B00B346A5 /* Board Game CenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB47DA9C2B47186B00B346A5 /* Board_Game_CenterUITests.swift */,
+				FB47DA9E2B47186B00B346A5 /* Board_Game_CenterUITestsLaunchTests.swift */,
+			);
+			path = "Board Game CenterUITests";
+			sourceTree = "<group>";
+		};
+		FB47DACC2B4721C600B346A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB47DACD2B47221E00B346A5 /* FirebaseManager.swift */,
+				FBFEC5FE2B5175580017C823 /* AccountViewModel.swift */,
+				FB2E6B342BEF84CC00E92D17 /* LegoSetDetailViewModel.swift */,
+				FB2E6B362BF9F5E900E92D17 /* CollectionAnalytics.swift */,
+				FB9D906D2C6E17820001D24E /* DiscoverViewModel.swift */,
+				FBEB2A8B2C7CA5ED00AE43D6 /* UserInteractionManager.swift */,
+				FBEB2A8D2C7CA71F00AE43D6 /* MLRecommendationEngine.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB79534F2B4D885E00F6EE46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FB7953502B4D888400F6EE46 /* RebrickableAPIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB47DA7B2B47186A00B346A5 /* Bricks Collection Center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB47DAA22B47186B00B346A5 /* Build configuration list for PBXNativeTarget "Bricks Collection Center" */;
+			buildPhases = (
+				FB47DA782B47186A00B346A5 /* Sources */,
+				FB47DA792B47186A00B346A5 /* Frameworks */,
+				FB47DA7A2B47186A00B346A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bricks Collection Center";
+			packageProductDependencies = (
+				FB47DABC2B47207F00B346A5 /* FirebaseAnalytics */,
+				FB47DABE2B47207F00B346A5 /* FirebaseAuth */,
+				FB47DAC02B47207F00B346A5 /* FirebaseDatabase */,
+				FB47DAC22B47207F00B346A5 /* FirebaseFirestore */,
+				FB47DAC42B47207F00B346A5 /* FirebaseFirestoreSwift */,
+				FB47DAC62B47207F00B346A5 /* FirebaseFunctions */,
+				FB47DAC82B47207F00B346A5 /* FirebaseMessaging */,
+				FB47DACA2B47207F00B346A5 /* FirebaseStorage */,
+			);
+			productName = "Board Game Center";
+			productReference = FB47DA7C2B47186A00B346A5 /* Bricks Collection Center.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB47DA8D2B47186B00B346A5 /* Bricks Collection CenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB47DAA52B47186B00B346A5 /* Build configuration list for PBXNativeTarget "Bricks Collection CenterTests" */;
+			buildPhases = (
+				FB47DA8A2B47186B00B346A5 /* Sources */,
+				FB47DA8B2B47186B00B346A5 /* Frameworks */,
+				FB47DA8C2B47186B00B346A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB47DA902B47186B00B346A5 /* PBXTargetDependency */,
+			);
+			name = "Bricks Collection CenterTests";
+			productName = "Board Game CenterTests";
+			productReference = FB47DA8E2B47186B00B346A5 /* Bricks Collection CenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB47DA972B47186B00B346A5 /* Bricks Collection CenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB47DAA82B47186B00B346A5 /* Build configuration list for PBXNativeTarget "Bricks Collection CenterUITests" */;
+			buildPhases = (
+				FB47DA942B47186B00B346A5 /* Sources */,
+				FB47DA952B47186B00B346A5 /* Frameworks */,
+				FB47DA962B47186B00B346A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB47DA9A2B47186B00B346A5 /* PBXTargetDependency */,
+			);
+			name = "Bricks Collection CenterUITests";
+			productName = "Board Game CenterUITests";
+			productReference = FB47DA982B47186B00B346A5 /* Bricks Collection CenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB47DA742B47186A00B346A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FB47DA7B2B47186A00B346A5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FB47DA8D2B47186B00B346A5 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FB47DA7B2B47186A00B346A5;
+					};
+					FB47DA972B47186B00B346A5 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FB47DA7B2B47186A00B346A5;
+					};
+				};
+			};
+			buildConfigurationList = FB47DA772B47186A00B346A5 /* Build configuration list for PBXProject "Bricks Collection Center" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB47DA732B47186A00B346A5;
+			packageReferences = (
+				FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FB47DA7D2B47186A00B346A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB47DA7B2B47186A00B346A5 /* Bricks Collection Center */,
+				FB47DA8D2B47186B00B346A5 /* Bricks Collection CenterTests */,
+				FB47DA972B47186B00B346A5 /* Bricks Collection CenterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB47DA7A2B47186A00B346A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB47DA892B47186B00B346A5 /* Preview Assets.xcassets in Resources */,
+				FB47DA862B47186B00B346A5 /* Assets.xcassets in Resources */,
+				FB47DABA2B471FF000B346A5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB47DA8C2B47186B00B346A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB47DA962B47186B00B346A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB47DA782B47186A00B346A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9D906C2C6E13820001D24E /* RecomendationConfig.swift in Sources */,
+				FBEB2A8E2C7CA71F00AE43D6 /* MLRecommendationEngine.swift in Sources */,
+				FB7953512B4D888400F6EE46 /* RebrickableAPIClient.swift in Sources */,
+				FB0D1C1C2B4DF45E00E7910A /* LegoSetSearchRowView.swift in Sources */,
+				FB2E6B392BFA0C7700E92D17 /* RangeType.swift in Sources */,
+				FB2E6B352BEF84CC00E92D17 /* LegoSetDetailViewModel.swift in Sources */,
+				FBEB2A8C2C7CA5ED00AE43D6 /* UserInteractionManager.swift in Sources */,
+				FB47DA822B47186A00B346A5 /* ContentView.swift in Sources */,
+				FB47DAB02B471E1600B346A5 /* MainScreenView.swift in Sources */,
+				FBFEC5FF2B5175580017C823 /* AccountViewModel.swift in Sources */,
+				FB79534A2B4D850600F6EE46 /* Bricks_Collection_CenterApp.swift in Sources */,
+				FB47DAB42B471E8900B346A5 /* SavedSetsView.swift in Sources */,
+				FB47DAAC2B471A6800B346A5 /* LoginView.swift in Sources */,
+				FBFEC5FD2B516AF00017C823 /* User.swift in Sources */,
+				FB0D1C1A2B4DEC5500E7910A /* LegoSetDetailView.swift in Sources */,
+				FB42077B2B4D5A75009B8F14 /* SearchView.swift in Sources */,
+				FB2E6B372BF9F5E900E92D17 /* CollectionAnalytics.swift in Sources */,
+				FB4207832B4D77D1009B8F14 /* LegoSet.swift in Sources */,
+				FB42077D2B4D5BFA009B8F14 /* AccountView.swift in Sources */,
+				FB79534C2B4D86D000F6EE46 /* LegoTheme.swift in Sources */,
+				FB42077F2B4D5CD9009B8F14 /* DiscoverView.swift in Sources */,
+				FB47DAAE2B471A9B00B346A5 /* RegistrationView.swift in Sources */,
+				FB9D906E2C6E17820001D24E /* DiscoverViewModel.swift in Sources */,
+				FB79534E2B4D879D00F6EE46 /* LegoMinifigure.swift in Sources */,
+				FB47DACE2B47221E00B346A5 /* FirebaseManager.swift in Sources */,
+				FBEB2A8A2C7CA5D100AE43D6 /* UserInteraction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB47DA8A2B47186B00B346A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB47DA932B47186B00B346A5 /* Board_Game_CenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB47DA942B47186B00B346A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB47DA9F2B47186B00B346A5 /* Board_Game_CenterUITestsLaunchTests.swift in Sources */,
+				FB47DA9D2B47186B00B346A5 /* Board_Game_CenterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB47DA902B47186B00B346A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB47DA7B2B47186A00B346A5 /* Bricks Collection Center */;
+			targetProxy = FB47DA8F2B47186B00B346A5 /* PBXContainerItemProxy */;
+		};
+		FB47DA9A2B47186B00B346A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB47DA7B2B47186A00B346A5 /* Bricks Collection Center */;
+			targetProxy = FB47DA992B47186B00B346A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB47DAA02B47186B00B346A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB47DAA12B47186B00B346A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB47DAA32B47186B00B346A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bricks Collection Center/Preview Content\"";
+				DEVELOPMENT_TEAM = KP57LN338B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgorzkowski.Bricks-Collection-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB47DAA42B47186B00B346A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bricks Collection Center/Preview Content\"";
+				DEVELOPMENT_TEAM = KP57LN338B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgorzkowski.Bricks-Collection-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB47DAA62B47186B00B346A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP57LN338B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgorzkowski.Board-Game-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bricks Collection Center.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bricks Collection Center";
+			};
+			name = Debug;
+		};
+		FB47DAA72B47186B00B346A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP57LN338B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgorzkowski.Board-Game-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bricks Collection Center.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bricks Collection Center";
+			};
+			name = Release;
+		};
+		FB47DAA92B47186B00B346A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP57LN338B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgorzkowski.Board-Game-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Board Game Center";
+			};
+			name = Debug;
+		};
+		FB47DAAA2B47186B00B346A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP57LN338B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgorzkowski.Board-Game-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Board Game Center";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB47DA772B47186A00B346A5 /* Build configuration list for PBXProject "Bricks Collection Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB47DAA02B47186B00B346A5 /* Debug */,
+				FB47DAA12B47186B00B346A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB47DAA22B47186B00B346A5 /* Build configuration list for PBXNativeTarget "Bricks Collection Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB47DAA32B47186B00B346A5 /* Debug */,
+				FB47DAA42B47186B00B346A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB47DAA52B47186B00B346A5 /* Build configuration list for PBXNativeTarget "Bricks Collection CenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB47DAA62B47186B00B346A5 /* Debug */,
+				FB47DAA72B47186B00B346A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB47DAA82B47186B00B346A5 /* Build configuration list for PBXNativeTarget "Bricks Collection CenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB47DAA92B47186B00B346A5 /* Debug */,
+				FB47DAAA2B47186B00B346A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB47DABC2B47207F00B346A5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FB47DABE2B47207F00B346A5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FB47DAC02B47207F00B346A5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FB47DAC22B47207F00B346A5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FB47DAC42B47207F00B346A5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FB47DAC62B47207F00B346A5 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		FB47DAC82B47207F00B346A5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		FB47DACA2B47207F00B346A5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB47DABB2B47207F00B346A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FB47DA742B47186A00B346A5 /* Project object */;
+}
